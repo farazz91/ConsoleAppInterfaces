@@ -28,6 +28,17 @@ namespace ConsoleAppInterfaces
             Console.WriteLine();
             Console.WriteLine("Default interface by implementing one method normally.");
             Cust.PrintExp();
+
+            Console.WriteLine();
+            Console.WriteLine("Abstract Class.");
+            CustomerAC custac = new CustomerAC();
+            custac.printAC();
+
+            //cn use refernece but cannot create an direct instance
+            Console.WriteLine();
+            AbstractCustomer abscust = new CustomerAC();
+            abscust.printAC();
+
         }
     }
 }
