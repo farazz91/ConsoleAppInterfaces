@@ -6,7 +6,28 @@ namespace ConsoleAppInterfaces
     {
         static void Main(string[] args)
         {
-            
+            Customer Cust = new Customer();
+            Cust.print();
+            Cust.PrintI2();
+            Console.WriteLine();
+
+            //Explicit calling of interface
+            Console.WriteLine("Explicit calling of interface method 1");
+            Customer cust1 = new Customer();
+            ((ICustomer)cust1).PrintExp();
+            ((ICustomer1)cust1).PrintExp();
+            Console.WriteLine();
+
+            Console.WriteLine("Explicit calling of interface method 2");
+            ICustomer icust = new Customer();
+            ICustomer1 icust1 = new Customer();
+
+            icust.PrintExp();
+            icust1.PrintExp();
+
+            Console.WriteLine();
+            Console.WriteLine("Default interface by implementing one method normally.");
+            Cust.PrintExp();
         }
     }
 }
