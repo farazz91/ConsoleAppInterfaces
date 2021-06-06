@@ -39,6 +39,12 @@ namespace ConsoleAppInterfaces
             AbstractCustomer abscust = new CustomerAC();
             abscust.printAC();
 
+            //Constructor for abstract class
+            CustomerAC constabs = new CustomerAC();
+            Console.WriteLine("Customer ID: {0}",constabs.Id.ToString());
+
+            CustomerAC constabs1 = new CustomerAC();
+            Console.WriteLine("Customer1 ID: {0}", constabs1.Id.ToString());
         }
     }
 }
