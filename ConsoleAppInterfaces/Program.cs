@@ -45,6 +45,14 @@ namespace ConsoleAppInterfaces
 
             CustomerAC constabs1 = new CustomerAC();
             Console.WriteLine("Customer1 ID: {0}", constabs1.Id.ToString());
+
+            //Mulitple inheritence using interface
+            Console.WriteLine();
+            Console.WriteLine("Multiple Inheritence");
+
+            AB ab = new AB();
+            ab.PrintAMethod();
+            ab.PrintBMethod();
         }
     }
 }
